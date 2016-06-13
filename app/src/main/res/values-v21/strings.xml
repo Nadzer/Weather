@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="morning">Morning</string>
+    <string name="evening">Evening</string>
+    <string name="city">City</string>
+    <string name="dayForecast">Day Forecast</string>
+    <string name="night">Night</string>
+    <string name="date">Date</string>
+    <string name="weather_image" translatable="false">Weather image</string>
+    <string name="image_grid_element" translatable="false">Image grid</string>
+    <string name="monday">Lundi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="thursday">Jeudi</string>
+    <string name="friday">Vendredi</string>
+    <string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+    <string name="your_city">Your city</string>
+</resources>

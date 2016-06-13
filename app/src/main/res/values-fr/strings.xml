@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="action_settings">Paramètres</string>
+    <string name="city">Ville</string>
+    <string name="date">Date</string>
+    <string name="dayForecast">Prévision</string>
+    <string name="evening">Soir</string>
+    <string name="friday">Vendredi</string>
+    <string name="monday">Lundi</string>
+    <string name="morning">Matin</string>
+    <string name="night">Nuit</string>
+    <string name="saturday">Samedi</string>
+    <string name="sunday">Dimanche</string>
+    <string name="thursday">Jeudi</string>
+    <string name="tuesday">Mardi</string>
+    <string name="wednesday">Mercredi</string>
+    <string name="your_city">Votre ville</string>
+    <string name="ok">Ok</string>
+    <string name="my_location">Ma localisation</string>
+    <string name="gps_not_activated">Le GPS est désactivé. Voulez-vous l\'activer ?</string>
+    <string name="cancel">Annuler</string>
+    <string name="settings">Paramètres</string>
+    <string name="gps_settings">Paramètres GPS</string>
+    <string name="enter_city">Entrez le nom de votre ville</string>
+    <string name="morn">Matin :</string>
+    <string name="eve">Soirée :</string>
+    <string name="night_sliding">Nuit :</string>
+    <string name="min">Min :</string>
+    <string name="max">Max :</string>
+</resources>

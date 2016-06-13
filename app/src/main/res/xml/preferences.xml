@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditTextPreference
+        android:key="city"
+        android:summary="Please provide your city"
+        android:title="Your City" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="applicationUpdates"
+        android:summary="This option if selected will allow the application to check for latest versions."
+        android:title="Application Updates" />
+
+</PreferenceScreen>

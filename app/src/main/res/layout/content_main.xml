@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#EEE"
+              android:orientation="vertical"
+              app:layout_behavior="@string/appbar_scrolling_view_behavior"
+              tools:context=".activities.MainActivity"
+              tools:showIn="@layout/activity_main">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        xmlns:sothree="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sliding_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        sothree:umanoDragView="@+id/dragView"
+        sothree:umanoOverlay="true"
+        sothree:umanoPanelHeight="68dp"
+        sothree:umanoParallaxOffset="100dp"
+        sothree:umanoScrollableView="@+id/main"
+        sothree:umanoShadowHeight="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_dark"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/image_weather"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/w02d"
+                    android:contentDescription="@string/weather_image"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#EEE"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/weather_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"/>
+        </LinearLayout>
+
+        <!-- Sliding weather complete description -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/sliding_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@android:color/holo_orange_dark"
+                android:textSize="26sp"
+                android:textStyle="bold"/>
+
+            <ImageView
+                android:id="@+id/sliding_city_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@id/sliding_city"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/sun"
+                android:contentDescription="@string/weather_image"/>
+
+            <TextView
+                android:id="@+id/sliding_morn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sliding_city_image"
+                android:gravity="start"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sliding_eve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sliding_morn"
+                android:gravity="start"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sliding_night"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/sliding_eve"
+                android:gravity="start"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sliding_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sliding_min"
+                android:layout_marginEnd="75dp"
+                android:layout_marginRight="75dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"/>
+
+            <TextView
+                android:id="@+id/sliding_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/sliding_city_image"
+                android:layout_marginEnd="75dp"
+                android:layout_marginRight="75dp"
+                android:gravity="start"
+                android:paddingLeft="20dp"/>
+        </RelativeLayout>
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+</LinearLayout>
